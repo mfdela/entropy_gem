@@ -27,7 +27,7 @@ a matrix to the same define_distance.
 
 The example files  show a basic usage of the classes.
 
-
+NOTE: requires ruby >= 1.9
 
 == Copyright
 
