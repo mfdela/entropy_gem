@@ -1,6 +1,8 @@
 require 'entropy'
 require 'pp'
 
+# note: require ruby 1.9.x
+
 obj = Entropy::ProbabilitySpace.new
 obj.add_stream("000000000")
 pp obj.prob_space   # [1.0]

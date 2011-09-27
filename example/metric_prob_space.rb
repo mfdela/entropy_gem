@@ -1,6 +1,8 @@
 require 'entropy'
 require 'pp'
 
+# note: require ruby 1.9.x
+
 obj = Entropy::ProbabilityMetricSpace.new
 obj.add_stream("000000000")
 obj.define_distance {|i, j| Math.sqrt(i*i + j*j) }

@@ -27,7 +27,10 @@ a matrix to the same define_distance.
 
 The example files  show a basic usage of the classes.
 
-NOTE: requires ruby >= 1.9
+NOTE: requires ruby >= 1.9.x
+
+Feel free to write me: rubygems@hiraedd.com or twitter @hiraedd
+if you have any question or suggestion.
 
 == Copyright
 
