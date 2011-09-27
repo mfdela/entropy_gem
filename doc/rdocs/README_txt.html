@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>File: README.txt [RDoc Documentation]</title>
+
+  <link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet" />
+
+  <script src="./js/jquery.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="./js/thickbox-compressed.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="./js/quicksearch.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="./js/darkfish.js" type="text/javascript"
+    charset="utf-8"></script>
+</head>
+
+<body class="file">
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="./LICENSE_txt.html">LICENSE.txt</a></li>
+        
+          <li class="file"><a href="./README_txt.html">README.txt</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class Index
+          <span class="search-toggle"><img src="./images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="./Entropy.html">Entropy</a></li>
+        
+          <li><a href="./Entropy/Dict.html">Entropy::Dict</a></li>
+        
+          <li><a href="./Entropy/ProbabilityMetricSpace.html">Entropy::ProbabilityMetricSpace</a></li>
+        
+          <li><a href="./Entropy/ProbabilitySpace.html">Entropy::ProbabilitySpace</a></li>
+        
+          <li><a href="./Entropy/Stream.html">Entropy::Stream</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    
+<h1>entropy-gem</h1>
+
+<p>This small gem provides methods to calculate the  entropy (and cardinality
+and diversity) of a probability space and of a probability metric space.</p>
+
+<p>A probability space is defined by a probability vector [p1, p2, …, pn]. A
+probability metric space  is defined by a probability vector and a metric
+function. The metric function defines the “distance” between the point i
+and the point j along with a distance matrix D where D[i, j] = distance
+between i and j.</p>
+
+<p>Most of the code is derived from: <a
+href="http://golem.ph.utexas.edu/category/2008/10/entropy_diversity_and_cardinal.html">golem.ph.utexas.edu/category/2008/10/entropy_diversity_and_cardinal.html</a>
+and  <a
+href="http://golem.ph.utexas.edu/category/2008/11/entropy_diversity_and_cardinal_1.html">golem.ph.utexas.edu/category/2008/11/entropy_diversity_and_cardinal_1.html</a></p>
+
+<p>In order to define a probability space, you can use the function add_stream
+to add a stream of chars (or bit). The method compute the probability
+vector using the frequency of each element of the stream. Otherwise you
+could supply directly a probability vector as an array of real.</p>
+
+<p>For a probability metric space you should also define the distance metric,
+either passing your function as a block to define_distance, or passing a
+matrix to the same define_distance.</p>
+
+<h2>Copyright</h2>
+
+<p>Copyright © 2011 hiraedd. See <a href="LICENSE_txt.html">LICENSE.txt</a>
+for further details.</p>
+
+<p>This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option)
+any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along
+with this program.  If not, see &lt;<a
+href="http://www.gnu.org/licenses/">www.gnu.org/licenses/</a>&gt;.</p>
+
+  </div>
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+</body>
+</html>
+

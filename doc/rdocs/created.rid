@@ -1,0 +1,9 @@
+Tue, 27 Sep 2011 13:01:24 +0200
+README.txt	Tue, 27 Sep 2011 12:31:37 +0200
+LICENSE.txt	Mon, 02 Jul 2007 00:55:35 +0200
+lib/entropy.rb	Sat, 24 Sep 2011 23:45:22 +0200
+lib/entropy/stream.rb	Tue, 27 Sep 2011 13:01:19 +0200
+lib/entropy/probability_space.rb	Tue, 27 Sep 2011 12:55:47 +0200
+lib/entropy/version.rb	Mon, 19 Sep 2011 15:41:58 +0200
+lib/entropy/dict.rb	Tue, 27 Sep 2011 12:39:49 +0200
+lib/entropy/metric_space.rb	Tue, 27 Sep 2011 12:57:52 +0200
