@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["hiraedd@hiraedd.com"]
   s.homepage    = "https://github.com/hiraedd/entropy_gem"
   s.summary     = %q{Computes the entropy of a finite probability space}
-  s.description = %q{This little gem calculates the entropy and ( the cardinality) of a finite probability space, defined by a probability vector; and of a finite probability metric space, defined by a probability vector and metric function.}
+  s.description = %q{This little gem calculates the entropy and ( the cardinality) of a finite probability space, defined by a probability vector; and of a finite probability metric space, defined by a probability vector and metric function. Requires ruby 1.9.x}
 
   s.rubyforge_project = "entropy"
 
