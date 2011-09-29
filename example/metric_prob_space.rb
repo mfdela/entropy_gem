@@ -31,7 +31,7 @@ puts obj.renyi_entropy(:infinite)
 
 # setting infinite distance means having a discrete set
 puts "setting infinite distance means having a discrete set"
-distance = Matrix[[:infinite, :infinite], [:infinite, :infinite]]
+distance = Matrix[[0, :infinite], [:infinite, 0]]
 obj.define_distance(distance)
 pp obj.prob_space # [0.25, 0.25, 0.25, 0.25]
 pp distance

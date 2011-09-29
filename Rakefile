@@ -14,7 +14,7 @@ desc 'generate API documentation to doc/rdocs/index.html'
 RDoc::Task.new do |rdoc|
     rdoc.main = 'README.txt'
     rdoc.rdoc_dir = 'doc/rdocs'
-    rdoc.rdoc_files.include("README.txt", "LICENSE.txt", "lib/**/*.rb")
+    rdoc.rdoc_files.include("README.txt", "LICENSE.txt", "CHANGELOG.txt", "lib/**/*.rb")
 end
 
 desc "Run tests"

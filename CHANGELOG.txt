@@ -1,0 +1,17 @@
+== Version 0.1.0
+
+* Add a test to verify a metric space degenerating in 
+  discrete case (distance = Infinity) and modified the examples
+
+== Version 0.0.3
+
+*  Specify more clearly that requires ruby 1.9.x
+
+== Version 0.0.2
+
+* Specifiy the requirements of ruby 1.9.x
+
+== Version 0.0.1
+
+* Initial commit
+

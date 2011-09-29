@@ -17,7 +17,7 @@ class TestEntropy < Test::Unit::TestCase
     assert_equal obj.prob_space.sort, [0.25, 0.75]
   end
 
-  def test_distance_metr
+  def test_distance_metr_3
     obj = Entropy::ProbabilityMetricSpace.new
     obj.add_stream("0123")
     obj.define_distance {|i, j| Math.sqrt(i*i + j*j) }
@@ -25,12 +25,20 @@ class TestEntropy < Test::Unit::TestCase
     assert_equal obj.distance_matrix, m
   end
 
-  def test_entropy_metr
+  def test_entropy_metr_4
     obj = Entropy::ProbabilityMetricSpace.new
     obj.add_stream("0123")
     obj.define_distance {|i, j| 1 }
     assert_equal obj.diversity(1), 1
   end
 
+  def test_entropy_metr_5
+    obj = Entropy::ProbabilityMetricSpace.new
+    obj.add_stream("01")
+    m = Matrix[[0, :infinite], [:infinite, 0]]
+    obj.define_distance(m)
+    assert_equal obj.cardinality(2), 2
+    assert_equal obj.cardinality(42), 2
+  end
 end
 
